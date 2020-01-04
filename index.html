@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Simon Dice</title>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="span">
+        <div class="score">
+            <h3>Nivel Actual:
+                <span id="nivel">0</span>
+            </h3>
+            <h3>Puntaje:
+                <span id="puntaje">0</span>
+            </h3>
+        </div>
+        <div class="gameboard">
+            <div id="celeste" class="color celeste left" data-color="celeste"></div>
+            <div id="violeta" class="color violeta right" data-color="violeta"></div>
+            <div id="naranja" class="color naranja left" data-color="naranja"></div>
+            <div id="verde" class="color verde right" data-color="verde"></div>
+            <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/logicGame.js"></script>
+    <script src="./js/init.js"></script>
+
+</body>
+
+</html>
